@@ -51,35 +51,59 @@ public class Hero {
             System.out.printf("勇者%sは道半ばで力尽きてしまった。\n", name);
         }
     }
-    
+    /**
+     * このファイル外からHeroクラスの名前を設定できるメソッド。
+     * @param name　設定したい名前
+     */
     public void setName(String name){
         this.name=name;
     } 
-   
+    /**
+     * このファイル外からHeroクラスの体力を設定できるメソッド。
+     * @param hitPoint　設定したい体力値
+     */
     public void setHitPoint(int hitPoint){
         this.hitPoint=hitPoint;
     }
- 
+    /**
+     * このファイル外からHeroクラスの攻撃力を設定できるメソッド。
+     * @param attack　設定したい攻撃力値
+     */
     public void setAttack(int attack){
         this.attack=attack;
     }
-
+    /**
+     * このファイル外からHeroクラスの生死状態を設定できるメソッド。
+     * @param dead　設定したい生死の状態
+     */
     public void setDead(boolean dead){
         this.dead=dead;
     }
- 
+    /**
+     * このファイル外から設定したHeroクラスの名前を得るためのメソッド。
+     * @return　生成したクラスの名前
+     */
     public String getName(){
         return this.name;
     }
-
+    /**
+     * このファイル外から設定したHeroクラスの体力値を得るためのメソッド。
+     * @return　生成したクラスの体力値
+     */
     public int getHitPoint(){
         return this.hitPoint;
     }
-
+    /**
+     * このファイル外から設定したHeroクラスの攻撃力値を得るためのメソッド。
+     * @return　生成したクラスの攻撃力値
+     */
     public int getAttack(){
         return this.attack;
     }
-
+    /**
+     * このファイル外から設定したHeroクラスの生死状態を得るためのメソッド。
+     * @return　生成したクラスの生死状態
+     */
     public boolean getDead(){
         return this.dead;
     }
