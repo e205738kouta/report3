@@ -24,7 +24,8 @@ public class Enemy extends LivingThing {
      * 指定されたダメージを hitPoint から引き、死亡判定を行う。
      * @param damage 受けたダメージ
      */
-    public void wounded(int damage){
+    @Override
+     public void wounded(double damage){
         this.hitPoint -= damage;
         if( this.hitPoint < 0 ) {
             dead = true;

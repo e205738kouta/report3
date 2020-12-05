@@ -26,7 +26,7 @@ public class LivingThing {
             opponent.wounded(damage);
         }
     }
-    public void wounded(int damage){
+    public void wounded(double damage){
         this.hitPoint -= damage;
         if( this.hitPoint < 0 ) {
             dead = true;

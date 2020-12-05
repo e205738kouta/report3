@@ -22,7 +22,7 @@ public class Hero extends LivingThing {
      * @param damage 受けたダメージ
      */
     @Override
-    public void wounded(int damage) {
+    public void wounded(double damage) {
         this.hitPoint -= damage;
         if( this.hitPoint < 0 ) {
             dead = true;
