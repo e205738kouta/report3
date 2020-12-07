@@ -27,7 +27,7 @@ public class Enemy extends LivingThing {
     @Override
      public void wounded(double damage){
         this.hitPoint -= damage;
-        if( this.hitPoint < 0 ) {
+        if( this.hitPoint <= 0 ) {
             dead = true;
             System.out.printf("モンスター%sは倒れた。\n", name);
         }

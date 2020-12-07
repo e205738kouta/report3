@@ -28,7 +28,7 @@ public class LivingThing {
     }
     public void wounded(double damage){
         this.hitPoint -= damage;
-        if( this.hitPoint < 0 ) {
+        if( this.hitPoint <= 0 ) {
             dead = true;
             System.out.printf("%sは倒れた。\n", name);
         }
